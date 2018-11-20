@@ -1,6 +1,6 @@
 all: markdown
 markdown:
-	touch markdown
-	echo "guessinggame" >> markdown
-	echo $(date) >> markdown
-	echo $(wc -l <./guessinggame.sh) >> markdown
+	touch README.md
+	"guessinggame" >> README.md
+	date >> README.md
+	wc -l < ./guessinggame.sh >> README.md
